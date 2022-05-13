@@ -16,7 +16,7 @@ class FiltraIPMiddleware:
 
     def process_view(self, request, view_func, view_args, view_kwargs):
         # Lista de IPs autorizados
-        ips_autorizados = ['127.0.0.1']
+        ips_autorizados = ['127.0.0.2']
 
         # IP do usuário
         ip_usuario = request.META.get('REMOTE_ADDR')  
